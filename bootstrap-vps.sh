@@ -58,6 +58,7 @@ apt-get install -y \
     curl \
     fail2ban \
     openssh-server \
+    python3-systemd \
     sudo \
     ufw \
     unattended-upgrades
@@ -189,6 +190,7 @@ cat > "$FAIL2BAN_JAIL" <<EOF
 [sshd]
 enabled = true
 port = ${SSH_PORT}
+backend = systemd
 maxretry = 5
 findtime = 10m
 bantime = 1h
