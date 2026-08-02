@@ -58,7 +58,6 @@ apt-get install -y \
     curl \
     fail2ban \
     openssh-server \
-    python3-systemd \
     sudo \
     ufw \
     unattended-upgrades
